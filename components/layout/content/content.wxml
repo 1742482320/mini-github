@@ -1,0 +1,40 @@
+<view class='content theme-font {{ istransition ? "content-trans" : ""}}' style="min-height: {{wheight - (moveY / 2)}}px;top: {{moveY}}rpx;" bindtouchstart="dlstart" bindtouchmove="dlmove" bindtouchend="dlend">
+    <!-- 下拉加载 -->
+    <view class="download">
+        <image hidden="{{!(isload)}}" class="icon-isload" src='../../../images/loading.gif' mode="aspectFit"></image>
+        <text hidden="{{isload}}" class='icon-isload iconfont iconxiangxia {{moveY > 150 ? "transAngle" : ""}}'></text>
+        <view class='title' wx:if="{{isload}}">正在加载中</view>
+        <view class='title' wx:else>{{moveY > 150 ? "松开加载" : "下拉加载"}}</view>
+    </view>
+    <view style='height: 30rpx'></view>
+    <import src="./template/About.wxml" />
+    <import src="./template/Events.wxml" />
+    <import src="./template/Explore.wxml" />
+    <import src="./template/Follow.wxml" />
+    <import src="./template/Gists.wxml" />
+    <import src="./template/Issues.wxml" />
+    <import src="./template/Repository.wxml" />
+    <import src="./template/Setting.wxml" />
+    <import src="./template/Starred.wxml" />
+    <template wx:if="{{(navindex == 'About')}}" is="About"></template>
+    <template wx:if="{{(navindex == 'Events')}}" is="Events"></template>
+    <template wx:if="{{(navindex == 'Explore')}}" is="Explore"></template>
+    <template wx:if="{{(navindex == 'Follow')}}" is="Follow"></template>
+    <template wx:if="{{(navindex == 'Gists')}}" is="Gists"></template>
+    <template wx:if="{{(navindex == 'Issues')}}" is="Issues"></template>
+    <template wx:if="{{(navindex == 'Repository')}}" is="Repository"></template>
+    <template wx:if="{{(navindex == 'Setting')}}" is="Setting"></template>
+    <template wx:if="{{(navindex == 'Starred')}}" is="Starred"></template>
+    <!-- <block>
+        <view class='item'>
+            <image class='avatar' src='https://avatars0.githubusercontent.com/u/28730034?v=4' mode="aspectFill"></image>
+            <view class="msg">
+                <view class="name">CS-Notes</view>
+                <view class="type">Java</view>
+                <view class="des">描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述</view>
+                <view class="state">start:75875 fork:24148 watcher:75875</view>
+                <view class="update">Update at 2019/09/02</view>
+            </view>
+        </view>
+    </block> -->
+</view>

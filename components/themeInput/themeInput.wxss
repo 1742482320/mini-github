@@ -1,0 +1,25 @@
+.theme-input{
+    height: 60rpx;
+    border: 1px solid #ccc;
+    border-radius: 6rpx;
+    margin: 0 14rpx 30rpx;
+    display: flex;
+}
+
+.input-focus {
+    border-color:  #4cb4e7;
+    box-shadow: 0 0 10rpx #4cb4e7;
+}
+
+.theme-input .input{
+    flex-grow: 1;
+    height: 100%;
+    font-size: 28rpx;
+    color: #666;
+    padding-left: 10rpx;
+}
+
+.theme-input .placeholder {
+    color: #ccc;
+    font-size: 28rpx;
+}

@@ -1,0 +1,26 @@
+<view class="userinfo" hidden="{{!(openUserInfo)}}" style="{{openUserInfo ? '' : 'z-index: -1;opacity: 0;'}}">
+    <text class="iconfont iconxiangxia back" bindtap="back"></text>
+    <view class="mask-avatar"></view>
+    <image class="avatar-bg" bindanimationend="animationend" src="{{avatar}}" mode="aspectFill"></image>
+    <image class="avatar" src="{{avatar}}" mode="aspectFill"></image>
+    <view style='height: 630rpx;'></view>
+    <block wx:if="{{animationend}}">
+        <view class="overview">
+            <view class="item">Email: </view>
+            <view class="item">Blog: </view>
+            <view class="item">Location: </view>
+            <view class="item">Company: </view>
+        </view>
+        <view class="overview">
+            <view class="item">Events: </view>
+            <view class="item">Organizations: </view>
+            <view class="item">Starred: </view>
+            <view class="item">Followers: </view>
+            <view class="item">Following: </view>
+        </view>
+        <view class="overview">
+            <view class="item">Gists: </view>
+            <view class="item">Repositorys: </view>
+        </view>
+    </block>
+</view>

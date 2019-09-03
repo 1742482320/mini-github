@@ -1,0 +1,28 @@
+.header{
+    background: #4cb4e7;
+    height: 62px;
+    width: 750rpx;
+    color:#fff;
+    font-weight:700;
+    position:absolute;
+    z-index:4;
+    top:0;
+    left:0;
+    padding-top: 4px;
+}
+.topbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 24px;
+    width:750rpx;
+    background: #4cb4e7;
+    z-index: 99;
+}
+.header .open{
+    height: 60px;
+    line-height: 80px;
+    padding-left: 24rpx;
+    padding-right: 24rpx;
+    font-size: 20px;
+}

@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "theme-input": "../../components/themeInput/themeInput",
+    "theme-button": "../../components/themeButton/themeButton"
+  }
+}

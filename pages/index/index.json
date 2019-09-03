@@ -1,0 +1,9 @@
+{
+    "usingComponents": {
+        "header": "../../components/layout/header/header",
+        "sidebar": "../../components/layout/sidebar/sidebar",
+        "content": "../../components/layout/content/content",
+        "footer": "../../components/layout/footer/footer",
+        "userinfo": "../../components/layout/userInfo/userInfo"
+    }
+}

@@ -1,0 +1,11 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/index/index",
+    "pages/themecolors/themecolors"
+  ],
+  "window": {
+    "navigationStyle": "custom"
+  },
+  "sitemapLocation": "sitemap.json"
+}

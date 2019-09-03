@@ -1,0 +1,9 @@
+<!--pages/index/index.wxml-->
+<header navindex="{{navindex}}" bindopenside="toggeside"></header>
+
+<sidebar navindex="{{navindex}}" bindopenUserInfo="openUserInfo" bindswitchnav="switchnav" bindtoggeside="toggeside" openside="{{openside}}"></sidebar>
+
+<content navindex="{{navindex}}"></content>
+
+<userinfo openUserInfo="{{openUserInfo}}"></userinfo>
+<!-- <footer></footer> -->

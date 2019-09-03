@@ -1,0 +1,62 @@
+.data-loading {
+    width: 300rpx;
+    height: 300rpx;
+    position:fixed;
+    top:48%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+
+.download{
+    width:750rpx;
+    height:130rpx;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color: #666;
+    flex-direction:column;
+    position:absolute;
+    left: 0;
+    top: -160rpx;
+    padding-top: 30rpx;
+}
+
+.download .icon-isload{
+    width: 50rpx;
+    height: 50rpx;
+    text-align: center;
+    line-height: 50rpx;
+    font-size: 38rpx;
+}
+
+.content {
+    position:relative;
+    transform: translateY(68px);
+}
+
+.content-trans {
+    transition: all 0.5s ease;
+}
+
+.transAngle {
+    transform: rotate(180deg);
+    transition: all 0.3s ease;
+}
+
+/* .content .item {
+    width: 750rpx;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.content .item .avatar {
+    width: 100rpx;
+    height: 100rpx;
+    border-radius: 50%;
+    margin: 0 50rpx;
+}
+
+.content .item .msg {
+    width: 600rpx;
+} */

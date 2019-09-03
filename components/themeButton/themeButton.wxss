@@ -1,0 +1,50 @@
+.theme-button{
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  font-weight: 400;
+  font-size: 28rpx;
+  border-radius: 6;
+  padding: 0;
+  overflow: hidden;
+}
+.theme-button[type=default]{
+  color: #fff;
+  background: #4cb4e7;
+}
+.theme-button[type=rect]{
+  color: #fff;
+  border-radius: 0;
+}
+
+.theme-button-tap{
+  /* background: radial-gradient(#4cb4e7, #29a2df) */
+  border-radius: 100%;
+  width: 10px;
+  height: 10px;
+  background: rgba(0, 0, 0,0.1);
+  opacity: .3;
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  -webkit-animation: ripple 0.5s ease-in;
+  animation: ripple 0.5s ease-in;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards
+}
+
+@keyframes ripple{
+  from {
+    -webkit-transform: scale(0.1);
+    transform: scale(0.1);
+    opacity: 0.3
+  }
+  to {
+    -webkit-transform: scale(10);
+    transform: scale(30);
+    opacity: 0.1;
+  }
+}

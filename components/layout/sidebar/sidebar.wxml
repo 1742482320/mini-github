@@ -1,0 +1,21 @@
+<view class="side {{fadein ? 'fadein' : 'fadeout'}}" hidden="{{!(openside)}}" style="height: {{sideHeight}}px;{{openside ? '' : 'z-index: -1;opacity: 0;'}}" catchtap="colseside">
+    <view class="bar {{fadein ? 'enter' : 'leave'}}" catchtap="return" bindscroll="scroll">
+        <view class="userinfo">
+            <image class="avatar-bg" mode="aspectFill" src="{{avatar}}"></image>
+            <view class='mask-avatar'></view>
+            <image class="avatar" bindtap='openUserInfo' mode="aspectFill" src="{{avatar}}"></image>
+            <text class="name theme-h1">{{name}}</text>
+            <text class='join'>Join:{{join}}</text>
+        </view>
+        <view class='navlist'>
+            <block wx:for="{{nav}}" wx:key="{{item.name}}">
+            <!-- switchnav -->
+                <view class="nav {{navindex == item.name && !istap ? 'active' : ''}}" bindtap='switchnav' data-name="{{item.name}}">
+                    <text class="iconfont {{item.icon}} icon-nav"></text>
+                    <text class="item">{{item.name}}</text>
+                    <view class='theme-button-tap' wx:if="{{istap && ripplename == item.name}}" bindanimationend="bend" style='left: {{tapx}}px;top: {{tapy}}px;'></view>
+                </view>
+            </block>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,5 @@
+<view class="header">
+    <view class='topbar'></view>
+    <text class="iconfont iconcaidan open" bindtap="openside"></text>
+    <text class="theme-h1">{{navindex}}</text>
+</view>

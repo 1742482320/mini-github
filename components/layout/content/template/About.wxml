@@ -1,0 +1,6 @@
+<template name="About">
+    <view class="overview">
+        <view class="item">Version: 1.0.0</view>
+        <view class="item">Home Page</view>
+    </view>
+</template>

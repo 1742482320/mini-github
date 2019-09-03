@@ -1,0 +1,14 @@
+<!--pages/login/login.wxml-->
+<view class='container'>
+    <theme-input iplaceholder='请输入账号' bindiptFuc="inpFuc" bindiptconfirm="login">
+        <view slot="before" class="usericon theme-background">
+            <text class="iconfont iconuser"></text>
+        </view>
+        <theme-button bindtap="login" class="entericon" slot="after" btype="rect" bdisabled="{{!username}}">
+            <text class="iconfont icondagou1 {{username ? 'theme-color' : ''}}"></text>
+        </theme-button>
+    </theme-input>
+    <!-- <theme-button bwidth="200rpx" bheight="70rpx" bindtap='toindex'>登录</theme-button> -->
+</view>
+
+<loading wx:if="{{isloading}}">登录中</loading>

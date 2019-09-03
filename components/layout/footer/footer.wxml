@@ -1,0 +1,10 @@
+<view class="footer">
+    <view class="item">
+        <image class="icon" src="../../../images/home.png" mode="aspectFit"></image>
+        <text class="name">首页</text>
+    </view>
+    <view class="item">
+        <image class="icon" src="../../../images/home.png" mode="aspectFit"></image>
+        <text class="name">我的</text>
+    </view>
+</view>

@@ -1,0 +1,81 @@
+.userinfo {
+    position: absolute;
+    width: 750rpx;
+    top: 0;
+    left: 0;
+    background: rgb(243, 243, 243);
+    z-index: 21;
+    min-height: 100%;
+}
+
+.userinfo .back{
+    position:absolute;
+    color:#fff;
+    left:40rpx;
+    top:60rpx;
+    font-weight:700;
+    font-size:50rpx;
+    z-index: 5;
+    transform: rotate(90deg);
+}
+
+.userinfo .avatar-bg {
+    position: absolute;
+    z-index: 2;
+    opacity: .7;
+    -webkit-animation: avatar-bg-move 0.3s ease;
+    animation: avatar-bg-move 0.3s ease;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+.userinfo .avatar{
+    position:absolute;
+    border-radius:50%;
+    z-index: 4;
+    -webkit-animation: avatar-move 0.3s ease;
+    animation: avatar-move 0.3s ease;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+.userinfo .mask-avatar{
+    position: absolute;
+    z-index: 4;
+    background:rgba(0, 0, 0, .2);
+    -webkit-animation: avatar-bg-move 0.3s ease;
+    animation: avatar-bg-move 0.3s ease;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@keyframes avatar-move{
+    from {
+        width:120rpx;
+        height:120rpx;
+        left:20rpx;
+        top: 130rpx;
+    }
+    to {
+        width:170rpx;
+        height:170rpx;
+        left:50%;
+        transform: translateX(-50%);
+        top: 130rpx;
+    }
+}
+
+@keyframes avatar-bg-move{
+    from {
+        width: 400rpx;
+        height: 400rpx;
+        left: 0;
+        top: 0;
+    }
+    to {
+        width: 750rpx;
+        height: 580rpx;
+        left: 0;
+        top: 0;
+    }
+}

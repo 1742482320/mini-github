@@ -1,0 +1,15 @@
+<template name="Setting">
+    <view class="overview">
+        <view class="item">Favorite Language</view>
+        <view class="item">Favorite Launcher</view>
+        <view class="item">Theme</view>
+        <view class="item">Share</view>
+        <view class="item">Clear Cache</view>
+    </view>
+    <view class="overview">
+        <view class="item">Open Source Licenses</view>
+    </view>
+    <view class="overview">
+        <view class="item">Sign out</view>
+    </view>
+</template>

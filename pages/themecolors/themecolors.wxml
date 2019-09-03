@@ -1,0 +1,4 @@
+<!--pages/themecolors/themecolors.wxml-->
+<view class="themebox">
+    <view wx:for="{{theme}}" class="item" wx:key="{{item.color}}" style="background: {{item.value}};">{{item.color}}</view>
+</view>

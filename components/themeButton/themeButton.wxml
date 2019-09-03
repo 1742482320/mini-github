@@ -1,0 +1,7 @@
+<button class="theme-button" style="width: {{bwidth}};height: {{bheight}};line-height: {{bheight}};"
+    type="{{btype}}" 
+    disabled="{{bdisabled}}"
+    bindtap='btap'>
+    <slot></slot>
+    <view class='theme-button-tap' wx:if="{{istap}}" bindanimationend="bend" style='left: {{tapx}}px;top: {{tapy}}px;'></view>
+</button>

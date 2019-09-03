@@ -1,0 +1,5 @@
+<view class="theme-input {{isfocus ? 'input-focus' : ''}}">
+    <slot name="before"></slot>
+    <input class="input" type="{{itype}}" placeholder="{{iplaceholder}}" placeholder-class="placeholder" bindconfirm="iptconfirm" bindinput="iptFuc" bindfocus='isfocus' bindblur='isblur' />
+    <slot name="after"></slot>
+</view>
