@@ -9,7 +9,7 @@
     <view class="overview">
         <view class="item">Open Source Licenses</view>
     </view>
-    <view class="overview">
-        <view class="item">Sign out</view>
+    <view class="overview" bindtap='clearStorage'>
+        <view class="item">Sign out（清除缓存）</view>
     </view>
 </template>

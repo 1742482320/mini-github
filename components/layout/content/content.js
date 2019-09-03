@@ -68,6 +68,17 @@ Component({
                     moveY: 0
                 })
             }
+        },
+        clearStorage(){
+            wx.clearStorage()
+            wx.showToast({
+                title: '清除成功',
+            })
+            setTimeout(function(){
+                wx.reLaunch({
+                    url: '/pages/login/login',
+                })
+            }.bind(this), 1000)
         }
     },
     data: {
